@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khaled Pêche - Produits</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="hotline">Hotline: +0216 234 567 890</div>
+            <div class="header-links">
+                <a href="#">Français</a>
+            </div>
+        </div>
+        <div class="logo-nav">
+            <h1>Khaled Pêche</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="Untitled-1.html">Panier</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="#"><img src="imag/panier.png" width="30px" alt="Panier"> (0)</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Widget météo inséré ici -->
+    <div id="ide7de87fe24ea4" a='{"t":"g7bs","v":"1.2","lang":"fr","locs":[],"ssot":"c","sics":"ds","cbkg":"rgba(255,255,255,0)","cfnt":"rgb(0,0,0)","cend":"rgba(0,0,0,0)"}'>
+        <a href="https://meteolabs.fr/widgets/">Widget Météo HTML</a> pour site Web par meteolabs.fr
+    </div>
+    <script async src="https://static1.meteolabs.fr/widgetjs/?id=ide7de87fe24ea4"></script>
+
+    <section class="main-collection">
+        <div class="collection-text">
+            <h2>Équipement de pêche</h2>
+            <a href="#" class="shop-now">Voir Produits</a>
+        </div>
+        <div class="collection-image">
+            <img width="400px" src="data:image/jpeg;base64,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" alt="Équipement de pêche">
+        </div>
+    </section>
+
+    <section class="product-trend">
+      <h3>Produits</h3>
+      <div class="product-grid">
+          <!-- Liste des produits -->
+          <div class="product">
+              <img src="https://tn.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/61/0167/1.jpg?7028" alt="Canne à pêche 1">
+              <h4>Canne à pêche 1</h4>
+              <p> <span id="priceunitaire">200</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="data:image/jpeg;base64,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" alt="Moulinet 1">
+              <h4>Moulinet 1</h4>
+              <p> <span id="priceunitaire">150</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="https://contents.mediadecathlon.com/p1992412/k$4037b3248baa141dfc2fce1902d55710/poisson-nageur-saxton-110sp-sardine-peche-au-leurre-en-mer.jpg?format=auto&quality=60&f=452x452" alt="Leurre 1">
+              <h4>Leurre 1</h4>
+              <p> <span id="priceunitaire">50</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUIFAQ2gftd-6tNvQ3k6ZZFeGLxD2JdJAKVg&s" alt="Fil de pêche 1">
+              <h4>Fil de pêche 1</h4>
+              <p> <span id="priceunitaire">60</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="https://www.pacificpeche.com/dw/image/v2/BFMQ_PRD/on/demandware.static/-/Sites-pp-master-catalog/default/dw763fb994/images/1/5/0/150044-a.jpg?sw=800&sh=800" alt="Canne à pêche 2">
+              <h4>Canne à pêche 2</h4>
+              <p> <span id="priceunitaire">220</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="https://m.media-amazon.com/images/I/41LAd9lC0PL._SR600%2C315_PIWhiteStrip%2CBottomLeft%2C0%2C35_SCLZZZZZZZ_FMpng_BG255%2C255%2C255.jpg" alt="Moulinet 2">
+              <h4>Moulinet 2</h4>
+              <p> <span id="priceunitaire">170</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="https://ae01.alicdn.com/kf/H365a34dc52054067a462473698febc56g/Leurre-de-p-che-souple-avec-crochet-app-t-lpour-petit-poisson-anguille-rose-bleu-nouveau.jpg" alt="Leurre 2">
+              <h4>Leurre 2</h4>
+              <p> <span id="priceunitaire">55</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFkdTE82s1WvDVjCP9odyyDd7lz-q9vfdkFmvzR7zhbA8rqKbtbN-PyrxlivqIZdoTfw8&usqp=CAU" alt="Fil de pêche 2">
+              <h4>Fil de pêche 2</h4>
+              <p> <span id="priceunitaire">65</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6OuFbZ9csdhfFHo9cbs_ilQgPyaUB3DduDeRh9vreuca7qc1d5w2_E_E8m9kHIMDLi-U&usqp=CAU" alt="Canne à pêche 3">
+              <h4>Canne à pêche 3</h4>
+              <p> <span id="priceunitaire">240</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7iUPmDD41l1shIfudIrrFG7KdrnNPq-CBMA&s" alt="Moulinet 3">
+              <h4>Moulinet 3</h4>
+              <p> 1<span id="priceunitaire">210</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="https://pecheur-peche.com/1723-large_default/pin-s-minnow-9-cm-7-g-flottant-yo-zuri.jpg" alt="Leurre 3">
+              <h4>Leurre 3</h4>
+              <p> <span id="priceunitaire">60</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="https://i.ebayimg.com/thumbs/images/g/E7EAAOSwkH9iovIc/s-l1200.jpg" alt="Fil de pêche 3">
+              <h4>Fil de pêche 3</h4>
+              <p> <span id="priceunitaire">70</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="https://m.media-amazon.com/images/I/51CXFjk43aL._AC_UF1000,1000_QL80_.jpg" alt="Canne à pêche 4">
+              <h4>Canne à pêche 4</h4>
+              <p> <span id="priceunitaire">270</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="imag/moulinet1.jfif" alt="Moulinet 4">
+              <h4>Moulinet 4</h4>
+              <p> <span id="priceunitaire">200</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="imag/leurre1.jfif" alt="Leurre 4">
+              <h4>Leurre 4</h4>
+              <p> <span id="priceunitaire">65</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="imag/fil1.jfif" alt="Fil de pêche 4">
+              <h4>Fil de pêche 4</h4>
+              <p> <span id="priceunitaire">75</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="imag/canne peshe1.jpg" alt="Canne à pêche 5">
+              <h4>Canne à pêche 5</h4>
+              <p> <span id="priceunitaire">300</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="imag/moulinet2.jfif" alt="Moulinet 5">
+              <h4>Moulinet 5</h4>
+              <p> <span id="priceunitaire">210</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="imag/leurre2.jpg" alt="Leurre 5">
+              <h4>Leurre 5</h4>
+              <p> <span id="priceunitaire">70</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="imag/fil2.jfif" alt="Fil de pêche 5">
+              <h4>Fil de pêche 5</h4>
+              <p> <span id="priceunitaire">80</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="imag/canne peshe2.jpg" alt="Canne à pêche 6">
+              <h4>Canne à pêche 6</h4>
+              <p> <span id="priceunitaire">320</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="imag/moulinet2.jfif" alt="Moulinet 6">
+              <h4>Moulinet 6</h4>
+              <p> <span id="priceunitaire">220</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="imag/leurre2.jpg" alt="Leurre 6">
+              <h4>Leurre 6</h4>
+              <p> <span id="priceunitaire">75</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="imag/fil4.jfif" alt="Fil de pêche 6">
+              <h4>Fil de pêche 6</h4>
+              <p> <span id="priceunitaire">85</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="imag/canne peshe3.jpg" alt="Canne à pêche 7">
+              <h4>Canne à pêche 7</h4>
+              <p> <span id="priceunitaire">340</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="imag/moulinet3.jfif" alt="Moulinet 7">
+              <h4>Moulinet 7</h4>
+              <p> <span id="priceunitaire">230</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="imag/leurre3.jpg" alt="Leurre 7">
+              <h4>Leurre 7</h4>
+              <p> <span id="priceunitaire">80</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+          <div class="product">
+              <img src="imag/fil2.jfif" alt="Fil de pêche 7">
+              <h4>Fil de pêche 7</h4>
+              <p> <span id="priceunitaire">90</span> DT</p>
+              <div class="quantity-controls">
+                  <button class="decrease">-</button>
+                  <input type="text" value="1" readonly>
+                  <button class="increase">+</button>
+              </div>
+              <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+      </div>
+  </section>
+
+
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h1>Khaled Pêche</h1>
+                <p>Votre expert en matériel de pêche</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Sign up
+                  </button>
+            </div>
+          
+              
+             <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+    <div class="modal-dialog modal-lg" >
+      <div class="modal-content">
+        
+          <div class="container" id="container">
+            <div class="form signup">
+              <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                  <a href="#" class="social"><i class="fab fa-github"></i></a>
+                  <a href="#" class="social"><i class="fab fa-google"></i></a>
+                  <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="social"><i class="far fa-envelope"></i></a>
+                </div>
+                <span>or use email to register</span>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+              </form>
+            </div>
+            <div class="form signin">
+              <form action="#">
+                <h1>Sign In</h1>
+                <div class="social-container">
+                  <a href="#" class="social"><i class="fab fa-github"></i></a>
+                  <a href="#" class="social"><i class="fab fa-google"></i></a>
+                  <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="social"><i class="far fa-envelope"></i></a>
+                </div>
+                <span>or use your account</span>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Sign In</button>
+              </form>
+            </div>
+            <div class="overlay-container">
+              <div class="overlay">
+                <div class="panel overlay-left">
+                  <h1>Welcome To<br> Learning Robo</h1>
+                  <p>Please Subscribe</p>
+                  <button class="press" id="signIn">Sign In</button>
+                  <div class="credit">Made with <span style="color:tomato;font-size:20px;">❤</span> by <a href="https://www.learningrobo.com/">Learning Robo</a></div>
+                </div>
+                <div class="panel overlay-right">
+                  <h1>Learning Robo</h1>
+                  <p>HTML, CSS & JS Projects</p>
+                  <button class="press" id="signUp">Sign Up</button>
+                  <div class="credit">Made with <span style="color:tomato;font-size:20px;">❤</span> by <a href="https://www.learningrobo.com/">Learning Robo</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+  
+            <div class="footer-links">
+                <a href="#">Politique de confidentialité</a>
+                <a href="#">Conditions d'utilisation</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div class="footer-contact">
+                <p>Contactez-nous:</p>
+                <p>Email: contact@khaledpeche.tn</p>
+                <p>Téléphone: +0216 234 567 890</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
